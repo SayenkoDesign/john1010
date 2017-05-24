@@ -9,3 +9,38 @@ License: Themeforest Split Licence
 License URI: -
 Text Domain: Avada
 */
+a:hover {color: #d88900;}
+
+.fusion-main-menu .sign-up span {
+    background-color: #C8DBFA;
+    color: #420000;
+}
+
+.fusion-main-menu .donate span {
+    background-color: #FFD99D;
+    color: #420000;
+}
+
+.fusion-main-menu .donate a:hover span, .fusion-main-menu .sign-up a:hover span {
+    opacity: 0.58;
+}
+
+.single-navigation {
+    text-align: center;
+}
+
+.dark-columns > .fusion-builder-row > .fusion-one-full {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px 20px 0 20px;
+    margin: 0 11%;
+}
+
+@media only screen and (max-width: 1250px) {
+    .fusion-header-wrapper.fusion-header-shadow {
+        position: fixed;
+        width: 100%;
+    }
+    #sliders-container {
+        padding-top: 98px;
+    }
+}

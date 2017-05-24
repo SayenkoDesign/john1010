@@ -35,7 +35,7 @@ echo $logo_opening_markup; ?>fusion-logo" data-margin-top="<?php echo esc_attr( 
 	do_action( 'avada_logo_prepend' );
 	?>
 	<?php if ( ( Avada()->settings->get( 'logo', 'url' ) && '' !== Avada()->settings->get( 'logo', 'url' ) ) || ( Avada()->settings->get( 'logo_retina', 'url' ) && '' !== Avada()->settings->get( 'logo_retina', 'url' ) ) ) : ?>
-		<a class="fusion-logo-link" href="<?php echo esc_url_raw( home_url( '/' ) ); ?>">
+		<a class="fusion-logo-link" href="/">
 			<?php
 			$logo_url = Fusion_Sanitize::get_url_with_correct_scheme( Avada()->settings->get( 'logo', 'url' ) );
 

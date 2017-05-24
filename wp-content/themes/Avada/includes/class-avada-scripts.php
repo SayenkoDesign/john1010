@@ -657,6 +657,7 @@ class Avada_Scripts {
 		}
 
 		wp_enqueue_style( 'avada-stylesheet', Avada::$template_dir_url . '/assets/css/style.min.css', array(), self::$version );
+		wp_enqueue_style( 'avada-stylesheet-overwrite', Avada::$template_dir_url . '/style.css', array('avada-stylesheet'), self::$version );
 
 		if ( Avada()->settings->get( 'status_fontawesome' ) ) {
 			if ( 'file' !== $this->compiler_mode ) {

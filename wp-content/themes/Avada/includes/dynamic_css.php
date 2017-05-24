@@ -286,7 +286,7 @@ function avada_dynamic_css_array( $original_css = array() ) {
 		'a:hover',
 		'.event-is-recurring:hover',
 	);
-	$css['global'][ $dynamic_css_helpers->implode( $elements ) ]['color'] = Fusion_Sanitize::color( Avada()->settings->get( 'primary_color' ) );
+	$css['global'][ $dynamic_css_helpers->implode( $elements ) ]['color'] = Fusion_Sanitize::color( Avada()->settings->get( 'link_color' ) );
 
 	$elements = array(
 		'#slidingbar-area ul li a:hover',
@@ -393,12 +393,12 @@ function avada_dynamic_css_array( $original_css = array() ) {
 		$elements[] = '#tribe_events_filters_wrapper .tribe_events_slider_val';
 		$elements[] = '.tribe-events-tickets .tickets_price .amount';
 	}
-	$css['global'][ $dynamic_css_helpers->implode( $elements ) ]['color'] = Fusion_Sanitize::color( Avada()->settings->get( 'primary_color' ) );
+	$css['global'][ $dynamic_css_helpers->implode( $elements ) ]['color'] = Fusion_Sanitize::color( Avada()->settings->get( 'link_color' ) );
 
 	$css['global']['.fusion-content-widget-area .fusion-image-wrapper .fusion-rollover .fusion-rollover-content a:hover']['color'] = '#333333';
 
 	$elements = array( '.star-rating:before', '.star-rating span:before' );
-	$css['global'][ $dynamic_css_helpers->implode( $elements ) ]['color'] = Fusion_Sanitize::color( Avada()->settings->get( 'primary_color' ) );
+	$css['global'][ $dynamic_css_helpers->implode( $elements ) ]['color'] = Fusion_Sanitize::color( Avada()->settings->get( 'link_color' ) );
 
 	$elements = array( '.tagcloud a:hover', '#slidingbar-area .tagcloud a:hover', '.fusion-body .fusion-footer-widget-area .tagcloud a:hover' );
 	$css['global'][ $dynamic_css_helpers->implode( $elements ) ]['color']       = '#FFFFFF';
